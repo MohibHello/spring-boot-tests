@@ -43,25 +43,25 @@ if you don't provide anything blank will be passed will run application.properti
 
 ```
 <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-failsafe-plugin</artifacId>
-				<executions>
-					<execution>
-						<id>integration-tests</id>
-						<goals>
-							<goal>integration-test</goal>
-							<goal>verify</goal>
-						</goals>
-					</execution>
-				</executions>
-				<dependencies>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-failsafe-plugin</artifacId>
+	<executions>
+		<execution>
+			<id>integration-tests</id>
+			<goals>
+				<goal>integration-test</goal>
+				<goal>verify</goal>
+			</goals>
+		</execution>
+	</executions>
+	<dependencies>
                 <dependency>
                     <groupId>org.junit.jupiter</groupId>
                     <artifactId>junit-jupiter-engine</artifactId>
                     <version>5.3.2</version>
                 </dependency>
             </dependencies>
-			</plugin>
+</plugin>
 ```
 
 
